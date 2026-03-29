@@ -1,0 +1,25 @@
+[package]
+name = "agent-r"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+winit = "0.29"
+image = "0.24"
+font8x8 = "0.3"
+windows = { version = "0.52", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_UI_Shell"
+] }
+sysinfo = "0.38.4"
+wmi = "0.13"
+serde = { version = "1", features = ["derive"] }
+gfxinfo = "0.1.2"
+adlx = "0.0.0-alpha.1"
+nvml-wrapper = "0.12.0"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_System_Memory"
+] }
